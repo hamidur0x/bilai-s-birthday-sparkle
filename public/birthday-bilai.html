@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Birthday Bilai 🖤 | March 8</title>
+  <meta name="description" content="A special birthday wish for the sweetest Bilai! Happy Birthday, pookie! 🍨☕🎂">
+  <meta name="theme-color" content="#0a0a0a">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ============================================
+       CSS RESET & BASE STYLES
+    ============================================ */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Color Palette */
+      --background: #0a0a0a;
+      --foreground: #f5e6ea;
+      --card: #141414;
+      --primary: #e091a8;
+      --primary-light: #f0b8c8;
+      --lavender: #b891cf;
+      --cream: #f5f0e8;
+      --cream-dark: #e8dfd0;
+      --muted: #6b5a63;
+      --accent: #d4708a;
+      
+      /* Effects */
+      --glow-pink: 0 0 30px rgba(224, 145, 168, 0.4);
+      --glow-soft: 0 0 60px rgba(224, 145, 168, 0.2);
+      
+      /* Fonts */
+      --font-main: 'Quicksand', sans-serif;
+      --font-handwritten: 'Caveat', cursive;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--background);
+      color: var(--foreground);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #141414;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(224, 145, 168, 0.5);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(224, 145, 168, 0.7);
+    }
+
+    /* ============================================
+       UTILITY CLASSES
+    ============================================ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .font-handwritten {
+      font-family: var(--font-handwritten);
+    }
+
+    .text-glow {
+      text-shadow: 0 0 20px rgba(224, 145, 168, 0.6), 0 0 40px rgba(224, 145, 168, 0.4);
+    }
+
+    .text-primary {
+      color: var(--primary);
+    }
+
+    .text-muted {
+      color: var(--muted);
+    }
+
+    /* ============================================
+       ANIMATIONS
+    ============================================ */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      10% { opacity: 0.3; }
+      90% { opacity: 0.3; }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes bounceSoft {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+    }
+
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+    }
+
+    @keyframes confettiFall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes particleFloat {
+      0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.3;
+      }
+      25% {
+        transform: translateY(-20px) translateX(10px);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translateY(-10px) translateX(-10px);
+        opacity: 0.5;
+      }
+      75% {
+        transform: translateY(-30px) translateX(5px);
+        opacity: 0.7;
+      }
+    }
+
+    @keyframes flicker {
+      0% { transform: scale(1) rotate(-2deg); opacity: 0.9; }
+      100% { transform: scale(1.1) rotate(2deg); opacity: 1; }
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(224, 145, 168, 0.3); }
+      50% { box-shadow: 0 0 40px rgba(224, 145, 168, 0.6); }
+    }
+
+    @keyframes musicPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(224, 145, 168, 0.4); }
+      50% { box-shadow: 0 0 0 15px rgba(224, 145, 168, 0); }
+    }
+
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes letterUnfold {
+      0% {
+        opacity: 0;
+        transform: rotateX(-90deg) scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: rotateX(0deg) scale(1);
+      }
+    }
+
+    /* Animation Classes */
+    .float { animation: float 3s ease-in-out infinite; }
+    .float-delayed { animation: float 3s ease-in-out infinite 0.5s; }
+    .float-slow { animation: float 4s ease-in-out infinite; }
+    .bounce { animation: bounce 2s ease-in-out infinite; }
+    .bounce-soft { animation: bounceSoft 2s ease-in-out infinite; }
+    .heartbeat { animation: heartbeat 1.5s ease-in-out infinite; }
+    .sparkle { animation: sparkle 2s ease-in-out infinite; }
+    .fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+    .glow-pulse { animation: glowPulse 2s ease-in-out infinite; }
+    .music-pulse { animation: musicPulse 1s ease-in-out infinite; }
+
+    .wiggle:hover { animation: wiggle 0.5s ease-in-out; }
+
+    /* ============================================
+       FLOATING HEARTS BACKGROUND
+    ============================================ */
+    .floating-hearts {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .floating-heart {
+      position: absolute;
+      bottom: -50px;
+      opacity: 0.3;
+      animation: floatUp 6s ease-in-out infinite;
+    }
+
+    /* ============================================
+       CONFETTI
+    ============================================ */
+    .confetti {
+      position: fixed;
+      pointer-events: none;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      animation: confettiFall 4s linear forwards;
+      z-index: 1000;
+    }
+
+    /* ============================================
+       MUSIC PLAYER
+    ============================================ */
+    .music-player {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 100;
+    }
+
+    .music-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--card);
+      border: 2px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1.5rem;
+      box-shadow: var(--glow-pink);
+    }
+
+    .music-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .music-hint {
+      position: absolute;
+      top: -2rem;
+      right: 0;
+      font-size: 0.75rem;
+      color: var(--primary);
+      white-space: nowrap;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* ============================================
+       CELEBRATE BUTTON
+    ============================================ */
+    .celebrate-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      z-index: 100;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--lavender));
+      border: none;
+      border-radius: 50px;
+      color: var(--background);
+      font-family: var(--font-main);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: var(--glow-pink);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow: hidden;
+    }
+
+    .celebrate-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .celebrate-btn .emoji {
+      font-size: 1.25rem;
+    }
+
+    .celebrate-btn:hover .emoji {
+      animation: bounce 0.5s ease-in-out;
+    }
+
+    /* ============================================
+       HERO SECTION
+    ============================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 1rem;
+    }
+
+    .hero-sparkles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .hero-sparkle {
+      position: absolute;
+      color: var(--primary);
+      opacity: 0.6;
+      animation: sparkle 2s ease-in-out infinite;
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    .hero-orb-1 {
+      top: 5rem;
+      left: 2rem;
+      width: 16rem;
+      height: 16rem;
+      background: rgba(224, 145, 168, 0.1);
+    }
+
+    .hero-orb-2 {
+      bottom: 5rem;
+      right: 2rem;
+      width: 20rem;
+      height: 20rem;
+      background: rgba(184, 145, 207, 0.1);
+      animation-delay: 1s;
+    }
+
+    .hero-content {
+      text-align: center;
+      z-index: 10;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-heart {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 10vw, 6rem);
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .hero-name {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      color: var(--muted);
+      max-width: 28rem;
+      margin: 0 auto;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards 0.3s;
+    }
+
+    .hero-emojis {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 2rem;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    .scroll-mouse {
+      width: 1.5rem;
+      height: 2.5rem;
+      border: 2px solid rgba(224, 145, 168, 0.5);
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      padding-top: 0.5rem;
+    }
+
+    .scroll-wheel {
+      width: 0.375rem;
+      height: 0.75rem;
+      background: var(--primary);
+      border-radius: 50px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    /* ============================================
+       LOVE LETTER SECTION
+    ============================================ */
+    .letter-section {
+      padding: 5rem 1rem;
+    }
+
+    .letter-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .letter-header-emoji {
+      font-size: 3.5rem;
+    }
+
+    .letter-header-title {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-top: 1rem;
+    }
+
+    .letter-card {
+      max-width: 42rem;
+      margin: 0 auto;
+      background: 
+        repeating-linear-gradient(
+          transparent,
+          transparent 28px,
+          #d4cfc2 28px,
+          #d4cfc2 29px
+        ),
+        linear-gradient(135deg, #f5f0e8, #e8dfd0);
+      border-radius: 1rem;
+      padding: 2rem;
+      position: relative;
+      box-shadow: 
+        inset 0 0 60px rgba(0, 0, 0, 0.05),
+        0 20px 50px rgba(0, 0, 0, 0.3);
+      animation: letterUnfold 1s ease-out;
+    }
+
+    @media (min-width: 768px) {
+      .letter-card {
+        padding: 3rem;
+      }
+    }
+
+    .letter-corner {
+      position: absolute;
+      font-size: 1.5rem;
+      opacity: 0.3;
+    }
+
+    .letter-corner-tl { top: 1rem; left: 1rem; }
+    .letter-corner-tr { top: 1rem; right: 1rem; }
+    .letter-corner-bl { bottom: 1rem; left: 1rem; }
+    .letter-corner-br { bottom: 1rem; right: 1rem; }
+
+    .letter-content {
+      color: #3d3229;
+      font-size: clamp(1.25rem, 4vw, 1.5rem);
+      line-height: 1.8;
+    }
+
+    .letter-line {
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    .letter-line:nth-child(1) { animation-delay: 0.5s; }
+    .letter-line:nth-child(2) { animation-delay: 0.7s; }
+    .letter-line:nth-child(3) { animation-delay: 0.9s; }
+    .letter-line:nth-child(4) { animation-delay: 1.1s; }
+    .letter-line:nth-child(5) { animation-delay: 1.3s; }
+    .letter-line:nth-child(6) { animation-delay: 1.5s; }
+    .letter-line:nth-child(7) { animation-delay: 1.7s; }
+    .letter-line:nth-child(8) { animation-delay: 1.9s; }
+
+    .letter-signature {
+      margin-top: 2rem;
+      color: var(--accent);
+    }
+
+    /* ============================================
+       WISH CARD SECTION
+    ============================================ */
+    .wish-section {
+      padding: 5rem 1rem;
+    }
+
+    .wish-card {
+      max-width: 32rem;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid rgba(224, 145, 168, 0.2);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      animation: glowPulse 2s ease-in-out infinite;
+    }
+
+    @media (min-width: 768px) {
+      .wish-card {
+        padding: 3rem;
+      }
+    }
+
+    .wish-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--glow-pink), 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .wish-card-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(224, 145, 168, 0.05), rgba(184, 145, 207, 0.05));
+    }
+
+    .wish-card-content {
+      position: relative;
+      z-index: 10;
+    }
+
+    .wish-emoji {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      animation: bounceSoft 2s ease-in-out infinite;
+    }
+
+    .wish-title {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .wish-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 1.125rem;
+    }
+
+    .wish-list li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .wish-list .emoji {
+      font-size: 1.25rem;
+    }
+
+    .wish-footer {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(224, 145, 168, 0.2);
+      color: var(--muted);
+      font-size: 1.5rem;
+    }
+
+    .wish-ribbon {
+      position: absolute;
+      font-size: 2.5rem;
+      opacity: 0.3;
+    }
+
+    .wish-ribbon-tr {
+      top: -1rem;
+      right: -1rem;
+      transform: rotate(12deg);
+    }
+
+    .wish-ribbon-bl {
+      bottom: -1rem;
+      left: -1rem;
+      transform: rotate(-12deg);
+    }
+
+    /* ============================================
+       INTERACTIVE CAKE SECTION
+    ============================================ */
+    .cake-section {
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+
+    .cake-header {
+      margin-bottom: 2rem;
+    }
+
+    .cake-title {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .cake-subtitle {
+      color: var(--muted);
+    }
+
+    .cake-container {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .cake-container:hover .cake-image-wrapper {
+      transform: scale(1.05);
+    }
+
+    .cake-image-wrapper {
+      position: relative;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .cake-image {
+      width: 20rem;
+      height: 24rem;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cake-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(224, 145, 168, 0.2), transparent);
+    }
+
+    .candles {
+      position: absolute;
+      top: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .candle-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flame {
+      width: 1rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      margin-bottom: 0.25rem;
+      background: radial-gradient(ellipse at center, #fff 0%, #ff6b35 40%, #f7931e 100%);
+      box-shadow: 0 0 20px #f7931e, 0 0 40px #ff6b35;
+      animation: flicker 0.5s ease-in-out infinite alternate;
+    }
+
+    .flame.off {
+      display: none;
+    }
+
+    .candle {
+      width: 0.5rem;
+      height: 2rem;
+      border-radius: 2px;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+    }
+
+    .cake-wish-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 10, 10, 0.8);
+      border-radius: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .cake-wish-overlay.show {
+      opacity: 1;
+    }
+
+    .cake-wish-content {
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .cake-wish-emoji {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cake-wish-text {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .cake-wish-subtext {
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    .cake-hint {
+      margin-top: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+      animation: pulse 2s infinite;
+    }
+
+    /* ============================================
+       GALLERY SECTION
+    ============================================ */
+    .gallery-section {
+      padding: 5rem 1rem;
+    }
+
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .gallery-header-emoji {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-title {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      color: var(--primary);
+    }
+
+    .gallery-subtitle {
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 72rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    .polaroid {
+      background: var(--cream);
+      padding: 0.75rem;
+      padding-bottom: 3rem;
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease;
+      cursor: pointer;
+      opacity: 0;
+      animation: scaleIn 0.6s ease-out forwards;
+    }
+
+    .polaroid:nth-child(1) { transform: rotate(-3deg); animation-delay: 0.1s; }
+    .polaroid:nth-child(2) { transform: rotate(2deg); animation-delay: 0.2s; }
+    .polaroid:nth-child(3) { transform: rotate(-2deg); animation-delay: 0.3s; }
+    .polaroid:nth-child(4) { transform: rotate(3deg); animation-delay: 0.4s; }
+    .polaroid:nth-child(5) { transform: rotate(-1deg); animation-delay: 0.5s; }
+    .polaroid:nth-child(6) { transform: rotate(2deg); animation-delay: 0.6s; }
+
+    .polaroid:hover {
+      transform: rotate(0deg) scale(1.05);
+      z-index: 10;
+    }
+
+    .polaroid-image-wrapper {
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      border-radius: 2px;
+    }
+
+    .polaroid-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .polaroid:hover .polaroid-image {
+      transform: scale(1.1);
+    }
+
+    .polaroid-caption {
+      text-align: center;
+      color: #3d3229;
+      font-size: 1.125rem;
+      margin-top: 1rem;
+    }
+
+    /* ============================================
+       MINI CARDS SECTION
+    ============================================ */
+    .mini-cards-section {
+      padding: 5rem 1rem;
+    }
+
+    .mini-cards-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .mini-cards-title {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .mini-cards-subtitle {
+      color: var(--muted);
+    }
+
+    .mini-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .mini-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    .mini-card {
+      background: var(--card);
+      border: 1px solid rgba(224, 145, 168, 0.2);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .mini-card:hover {
+      transform: scale(1.1);
+      box-shadow: var(--glow-pink);
+    }
+
+    .mini-card:hover .mini-card-emoji {
+      transform: scale(1.25);
+      animation: bounce 0.5s ease-in-out;
+    }
+
+    .mini-card-emoji {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .mini-card-title {
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: var(--foreground);
+    }
+
+    .mini-card-subtitle {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .mini-card-heart {
+      opacity: 0;
+      margin-top: 0.75rem;
+      font-size: 1.25rem;
+      transition: opacity 0.3s ease;
+    }
+
+    .mini-card:hover .mini-card-heart {
+      opacity: 1;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+
+    /* ============================================
+       ENDING MESSAGE SECTION
+    ============================================ */
+    .ending-section {
+      position: relative;
+      padding: 8rem 1rem;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: var(--primary);
+      animation: particleFloat 4s ease-in-out infinite;
+    }
+
+    .ending-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24rem;
+      height: 24rem;
+      background: rgba(224, 145, 168, 0.1);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .ending-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 42rem;
+      margin: 0 auto;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .ending-heart {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+
+    .ending-title {
+      font-size: clamp(2rem, 6vw, 4rem);
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .ending-message {
+      font-size: clamp(1.125rem, 3vw, 1.5rem);
+      color: var(--muted);
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .ending-emojis {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 2rem;
+    }
+
+    .ending-signature {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(224, 145, 168, 0.2);
+    }
+
+    .ending-signature-text {
+      font-size: 1.5rem;
+    }
+
+    .ending-signature-name {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-top: 0.5rem;
+    }
+
+    .ending-date {
+      display: inline-block;
+      margin-top: 3rem;
+      background: var(--card);
+      border: 1px solid rgba(224, 145, 168, 0.3);
+      border-radius: 50px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.25rem;
+      color: var(--primary);
+      animation: glowPulse 2s ease-in-out infinite;
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    footer {
+      padding: 2rem 1rem;
+      text-align: center;
+      border-top: 1px solid rgba(224, 145, 168, 0.1);
+    }
+
+    .footer-text {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .footer-birthday {
+      font-size: 1.125rem;
+      color: var(--primary);
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <!-- Confetti Container -->
+  <div id="confettiContainer"></div>
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <audio id="bgMusic" loop>
+      <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-tune-530.mp3" type="audio/mpeg">
+    </audio>
+    <span class="music-hint" id="musicHint">Tap for music 🎶</span>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle music">🔇</button>
+  </div>
+
+  <!-- Celebrate Button -->
+  <button class="celebrate-btn" id="celebrateBtn">
+    <span class="emoji">🎉</span>
+    <span>Celebrate!</span>
+  </button>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-sparkles" id="heroSparkles"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    
+    <div class="hero-content">
+      <div class="hero-heart">🖤</div>
+      <h1 class="hero-title font-handwritten text-glow">Happy Birthday</h1>
+      <h2 class="hero-name font-handwritten">Bilai 💖</h2>
+      <p class="hero-subtitle">March 8th is extra special because you were born! 🎂</p>
+      
+      <div class="hero-emojis">
+        <span class="float">🍨</span>
+        <span class="float-delayed">☕</span>
+        <span class="float-slow">🎂</span>
+        <span class="float">💝</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Love Letter Section -->
+  <section class="letter-section">
+    <div class="container">
+      <div class="letter-header">
+        <span class="letter-header-emoji">💌</span>
+        <h3 class="letter-header-title font-handwritten">A Letter For You</h3>
+      </div>
+
+      <div class="letter-card">
+        <span class="letter-corner letter-corner-tl">✿</span>
+        <span class="letter-corner letter-corner-tr">✿</span>
+        <span class="letter-corner letter-corner-bl">✿</span>
+        <span class="letter-corner letter-corner-br">✿</span>
+
+        <div class="letter-content font-handwritten">
+          <p class="letter-line">Dearest Bilai,</p>
+          <p class="letter-line">Happy Birthday to the most amazing pookie ever! 🎀</p>
+          <p class="letter-line">On this special day, March 8th, I want you to know how much you mean to me. Your love for ice cream 🍨 is as sweet as your soul!</p>
+          <p class="letter-line">Whether it's coffee in the morning ☕, tea in the afternoon, or espresso whenever you need that extra boost...</p>
+          <p class="letter-line">You always bring warmth and joy to everyone around you! ✨</p>
+          <p class="letter-line">May this year bring you endless scoops of happiness, and all the caffeinated beverages your heart desires!</p>
+          <p class="letter-line letter-signature">With all my love,</p>
+          <p class="letter-line letter-signature">Your Bestie Forever 💝</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wish Card Section -->
+  <section class="wish-section">
+    <div class="container">
+      <div class="wish-card">
+        <div class="wish-card-bg"></div>
+        <span class="wish-ribbon wish-ribbon-tr">🎀</span>
+        <span class="wish-ribbon wish-ribbon-bl">🎀</span>
+        
+        <div class="wish-card-content">
+          <div class="wish-emoji">🎂</div>
+          <h3 class="wish-title font-handwritten">Birthday Wishes</h3>
+          <ul class="wish-list">
+            <li><span class="emoji">🌟</span> May all your dreams come true</li>
+            <li><span class="emoji">💫</span> May your days be filled with joy</li>
+            <li><span class="emoji">🍨</span> May you never run out of ice cream</li>
+            <li><span class="emoji">☕</span> May your coffee always be perfect</li>
+          </ul>
+          <div class="wish-footer font-handwritten">
+            Happy Birthday, Beautiful! 🖤
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cake Section -->
+  <section class="cake-section">
+    <div class="container">
+      <div class="cake-header">
+        <h3 class="cake-title font-handwritten">Make a Wish! 🌟</h3>
+        <p class="cake-subtitle">Tap the cake to blow out the candles</p>
+      </div>
+
+      <div class="cake-container" id="cakeContainer">
+        <div class="cake-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=400&h=500&fit=crop" alt="Birthday Cake" class="cake-image">
+          <div class="cake-overlay"></div>
+        </div>
+
+        <div class="candles" id="candles">
+          <div class="candle-wrapper">
+            <div class="flame" id="flame1"></div>
+            <div class="candle"></div>
+          </div>
+          <div class="candle-wrapper">
+            <div class="flame" id="flame2"></div>
+            <div class="candle"></div>
+          </div>
+          <div class="candle-wrapper">
+            <div class="flame" id="flame3"></div>
+            <div class="candle"></div>
+          </div>
+        </div>
+
+        <div class="cake-wish-overlay" id="cakeWishOverlay">
+          <div class="cake-wish-content">
+            <div class="cake-wish-emoji">🎉</div>
+            <p class="cake-wish-text font-handwritten">Happy Birthday, Bilai!</p>
+            <p class="cake-wish-subtext">May your wish come true! ✨</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="cake-hint" id="cakeHint">✨ Tap to blow the candles ✨</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-header">
+        <span class="gallery-header-emoji">📸</span>
+        <h3 class="gallery-title font-handwritten">Sweet Memories</h3>
+        <p class="gallery-subtitle">Things that remind me of you 💕</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="polaroid">
+          <div class="polaroid-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=300&h=400&fit=crop" alt="Ice cream" class="polaroid-image">
+          </div>
+          <p class="polaroid-caption font-handwritten">Ice cream lover 🍨</p>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&h=400&fit=crop" alt="Coffee" class="polaroid-image">
+          </div>
+          <p class="polaroid-caption font-handwritten">Coffee addict ☕</p>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=300&h=400&fit=crop" alt="Macarons" class="polaroid-image">
+          </div>
+          <p class="polaroid-caption font-handwritten">Sweet moments 🧁</p>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=300&h=400&fit=crop" alt="Party" class="polaroid-image">
+          </div>
+          <p class="polaroid-caption font-handwritten">Party time! 🎉</p>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=300&h=400&fit=crop" alt="Cake" class="polaroid-image">
+          </div>
+          <p class="polaroid-caption font-handwritten">Birthday vibes 🎂</p>
+        </div>
+        <div class="polaroid">
+          <div class="polaroid-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=300&h=400&fit=crop" alt="Tea" class="polaroid-image">
+          </div>
+          <p class="polaroid-caption font-handwritten">Tea time 🫖</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini Cards Section -->
+  <section class="mini-cards-section">
+    <div class="container">
+      <div class="mini-cards-header">
+        <h3 class="mini-cards-title font-handwritten">Things You Love 💝</h3>
+        <p class="mini-cards-subtitle">Tap to show some love!</p>
+      </div>
+
+      <div class="mini-cards-grid">
+        <div class="mini-card wiggle">
+          <div class="mini-card-emoji">🍨</div>
+          <div class="mini-card-title">Ice Cream</div>
+          <div class="mini-card-subtitle">Your forever love</div>
+          <div class="mini-card-heart">💖</div>
+        </div>
+        <div class="mini-card wiggle">
+          <div class="mini-card-emoji">☕</div>
+          <div class="mini-card-title">Coffee</div>
+          <div class="mini-card-subtitle">Morning fuel</div>
+          <div class="mini-card-heart">💖</div>
+        </div>
+        <div class="mini-card wiggle">
+          <div class="mini-card-emoji">🫖</div>
+          <div class="mini-card-title">Tea</div>
+          <div class="mini-card-subtitle">Cozy companion</div>
+          <div class="mini-card-heart">💖</div>
+        </div>
+        <div class="mini-card wiggle">
+          <div class="mini-card-emoji">🧋</div>
+          <div class="mini-card-title">Espresso</div>
+          <div class="mini-card-subtitle">Power boost</div>
+          <div class="mini-card-heart">💖</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ending Message Section -->
+  <section class="ending-section" id="endingSection">
+    <div class="ending-glow"></div>
+
+    <div class="ending-content">
+      <div class="ending-heart">🖤</div>
+      <h2 class="ending-title font-handwritten text-glow">Always Stay Cute, Bilai</h2>
+      <p class="ending-message">
+        May your birthday be as sweet as your favorite ice cream, as warm as your morning coffee, and as wonderful as you are! ✨
+      </p>
+
+      <div class="ending-emojis">
+        <span class="float">🍨</span>
+        <span class="float-delayed">☕</span>
+        <span class="float-slow">🎂</span>
+        <span class="float">💝</span>
+        <span class="float-delayed">🌟</span>
+      </div>
+
+      <div class="ending-signature">
+        <p class="ending-signature-text font-handwritten">With all my love,</p>
+        <p class="ending-signature-name font-handwritten">Your Best Friend Forever 💕</p>
+      </div>
+
+      <div class="ending-date font-handwritten">
+        March 8th 🎀
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">Made with 💖 for Bilai</p>
+    <p class="footer-birthday font-handwritten">Happy Birthday! 🎂</p>
+  </footer>
+
+  <script>
+    // ============================================
+    // FLOATING HEARTS
+    // ============================================
+    function createFloatingHearts() {
+      const container = document.getElementById('floatingHearts');
+      for (let i = 0; i < 15; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'floating-heart';
+        heart.textContent = '🖤';
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.fontSize = (10 + Math.random() * 20) + 'px';
+        heart.style.animationDuration = (3 + Math.random() * 4) + 's';
+        heart.style.animationDelay = Math.random() * 5 + 's';
+        container.appendChild(heart);
+      }
+    }
+
+    // ============================================
+    // SPARKLES
+    // ============================================
+    function createSparkles() {
+      const container = document.getElementById('heroSparkles');
+      for (let i = 0; i < 20; i++) {
+        const sparkle = document.createElement('span');
+        sparkle.className = 'hero-sparkle sparkle';
+        sparkle.textContent = '✦';
+        sparkle.style.top = Math.random() * 100 + '%';
+        sparkle.style.left = Math.random() * 100 + '%';
+        sparkle.style.animationDelay = Math.random() * 3 + 's';
+        container.appendChild(sparkle);
+      }
+    }
+
+    // ============================================
+    // PARTICLES
+    // ============================================
+    function createParticles() {
+      const section = document.getElementById('endingSection');
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.width = (2 + Math.random() * 4) + 'px';
+        particle.style.height = particle.style.width;
+        particle.style.animationDelay = Math.random() * 4 + 's';
+        section.appendChild(particle);
+      }
+    }
+
+    // ============================================
+    // CONFETTI
+    // ============================================
+    const confettiColors = [
+      'hsl(340, 70%, 75%)',
+      'hsl(280, 60%, 70%)',
+      'hsl(40, 30%, 90%)',
+      'hsl(350, 60%, 65%)',
+      'hsl(0, 0%, 100%)'
+    ];
+
+    function triggerConfetti() {
+      const container = document.getElementById('confettiContainer');
+      for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.top = '-20px';
+        confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+        confetti.style.animationDelay = Math.random() * 0.5 + 's';
+        confetti.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+        container.appendChild(confetti);
+        
+        setTimeout(() => confetti.remove(), 4000);
+      }
+    }
+
+    // ============================================
+    // MUSIC PLAYER
+    // ============================================
+    const musicBtn = document.getElementById('musicBtn');
+    const bgMusic = document.getElementById('bgMusic');
+    const musicHint = document.getElementById('musicHint');
+    let isPlaying = false;
+
+    bgMusic.volume = 0.3;
+
+    musicBtn.addEventListener('click', () => {
+      if (isPlaying) {
+        bgMusic.pause();
+        musicBtn.textContent = '🔇';
+        musicBtn.classList.remove('music-pulse');
+        musicHint.style.display = 'block';
+      } else {
+        bgMusic.play().catch(() => {});
+        musicBtn.textContent = '🎵';
+        musicBtn.classList.add('music-pulse');
+        musicHint.style.display = 'none';
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // ============================================
+    // CELEBRATE BUTTON
+    // ============================================
+    document.getElementById('celebrateBtn').addEventListener('click', triggerConfetti);
+
+    // ============================================
+    // INTERACTIVE CAKE
+    // ============================================
+    const cakeContainer = document.getElementById('cakeContainer');
+    const flames = [document.getElementById('flame1'), document.getElementById('flame2'), document.getElementById('flame3')];
+    const cakeWishOverlay = document.getElementById('cakeWishOverlay');
+    const cakeHint = document.getElementById('cakeHint');
+    let candlesLit = true;
+
+    cakeContainer.addEventListener('click', () => {
+      if (candlesLit) {
+        flames.forEach(flame => flame.classList.add('off'));
+        cakeWishOverlay.classList.add('show');
+        cakeHint.textContent = '🎉 Candles blown! 🎉';
+        candlesLit = false;
+        triggerConfetti();
+        
+        setTimeout(() => {
+          flames.forEach(flame => flame.classList.remove('off'));
+          cakeWishOverlay.classList.remove('show');
+          cakeHint.textContent = '✨ Tap to blow the candles ✨';
+          candlesLit = true;
+        }, 5000);
+      }
+    });
+
+    // ============================================
+    // INITIALIZE
+    // ============================================
+    document.addEventListener('DOMContentLoaded', () => {
+      createFloatingHearts();
+      createSparkles();
+      createParticles();
+      
+      // Trigger confetti on page load
+      setTimeout(triggerConfetti, 500);
+    });
+  </script>
+</body>
+</html>
